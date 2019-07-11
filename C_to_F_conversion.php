@@ -1,3 +1,4 @@
+
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="css/Temparature.css">
@@ -16,8 +17,39 @@ if(isset($_POST['F_to_C']))
 		$cel = ($unit2 - 32)*(5/9);
 		echo $cel;
 		
+		
+$link = mysqli_connect("localhost", "root", "", "exam");
+ 
+// Check connection
+if($link === false){
+    die("ERROR: Could not connect. " . mysqli_connect_error());
+}
+ 
+ // Attempt create table  query execution
+
+ $queryCreateUsersTable = "CREATE TABLE IF NOT EXISTS `Temperature` (
+    `Temperature_in_Celcious` varchar(255) NOT NULL,
+    `Temperature_in_Fahrenheit` varchar(255) NOT NULL
+)";
+ 
+if(mysqli_query($link, $queryCreateUsersTable)){
+// Attempt insert query execution
+$sql = "INSERT INTO Temperature (Temperature_in_Celcious, Temperature_in_Fahrenheit) VALUES ('$cel', '$unit2')";
+
+if(!mysqli_query($link, $sql)){
+    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+}
+ 
+// Close connection
+mysqli_close($link);
+}
 }
 ?>"></br></br></br>
+
+
+
+
+
 Fahrenheit: <input type="text" name="unitfahr" value="<?php 
 
 if(isset($_POST['C_to_F']))
