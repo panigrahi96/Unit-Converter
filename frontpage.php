@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST['Temperature']))
 {
-	
+	header("Location:C_to_F_conversion.php");
 }
 if(isset($_POST['Weight']))
 {
@@ -9,7 +9,7 @@ if(isset($_POST['Weight']))
 }	
 if(isset($_POST['Distance']))
 {
-	
+	header("Location:M_to_Y_conversion.php");
 }
 ?>
 <html>
