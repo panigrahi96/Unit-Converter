@@ -48,8 +48,6 @@ mysqli_close($link);
 
 
 
-
-
 Fahrenheit: <input type="text" name="unitfahr" value="<?php 
 
 if(isset($_POST['C_to_F']))
