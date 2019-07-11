@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Wight Conversion</title>
+<title>Weight Conversion</title>
+<link rel="stylesheet" href="css/kg_to_pound.css" type="text/css">
 </head>
 <body>
 <div class="maindiv">
 <!--HTML Form -->
 <div class="form_div">
 <div class="title">
-<h2>WEIGHT CONVERSION</h2>
+<h2><u>WEIGHT CONVERSION</u></h2>
 </div>
 <form action="" method="POST">
 <!-- Method can be set as POST for hiding values in URL-->
