@@ -1,14 +1,12 @@
-.form_div{
-  text-align: center;
-  color: red;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  margin-right: 150px;
-  margin-left: 80px;
+body{
+	border-style: solid;
+	color : Tomato;
+	text-align: center;
+	background-color: ;
 }
-label{
-	color: black
-}
-.maindiv{
-	outline: 5px dotted green;
+
+h1{
+	background-color:Tomato;
+	color: white;
+	text-align: center;
 }

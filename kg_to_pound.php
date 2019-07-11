@@ -9,7 +9,7 @@
 <!--HTML Form -->
 <div class="form_div">
 <div class="title">
-<h2><u>WEIGHT CONVERSION</u></h2>
+<h1>WEIGHT CONVERSION</h1>
 </div>
 <form action="" method="POST">
 <!-- Method can be set as POST for hiding values in URL-->

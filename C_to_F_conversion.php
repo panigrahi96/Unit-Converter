@@ -1,6 +1,6 @@
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="Temparature.css">
+<link rel="stylesheet" type="text/css" href="css/Temparature.css">
 
 <title>Celsius to Fahrenheit and Fahrenheit to Celsius Unit Converter</title>
 
