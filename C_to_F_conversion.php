@@ -1,12 +1,15 @@
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="Temparature.css">
+
 <title>Celsius to Fahrenheit and Fahrenheit to Celsius Unit Converter</title>
+
 </head>
 <body>
 <h1>Celsius To Fahrenheit and Fahrenheit To Celsius Converter</h1>
 
 <form action="" method="POST">
-Celsius: <input type="text" name="unitcel" value="<?php 
+Celsiusius: <input type="text" name="unitcel" value="<?php 
 if(isset($_POST['F_to_C']))
 {
 	    $unit2 = $_POST['unitfahr'];
